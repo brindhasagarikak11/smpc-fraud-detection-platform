@@ -1,0 +1,36 @@
+# Experiment Runner Configuration
+experiment_suite_version: "1.0.0"
+random_seed: 42
+
+banks:
+  - 2
+  - 3
+  - 5
+  - 10
+  - 20
+  - 50
+  - 100
+
+transactions:
+  - 100
+  - 1000
+  - 10000
+  - 100000
+
+epsilon_values:
+  - 0.1
+  - 0.5
+  - 1.0
+  - 2.0
+  - 5.0
+
+dropout_rates:
+  - 0.0
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+
+threshold_ratio: 0.67
+target_shard_size: 3
+hardware_environment: "Simulated Distributed Multi-Bank AWS Cluster (c5.xlarge instances)"
